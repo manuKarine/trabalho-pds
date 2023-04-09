@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.RegrasDeNegocio.ContatoForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.RegrasDeNegocio"
+        mc:Ignorable="d"
+        Title="ContatoForm" Height="450" Width="703">
+    <Grid Background="#F92472" Margin="0,0,0,-46">
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="137,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="24"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="76,103,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="-0.121,0.838" FontFamily="Arial"/>
+        <Label HorizontalAlignment="Left" Margin="135,174,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="rdSexoGroup" Header="Sexo" Margin="245,313,205,51" Height="NaN" Width="NaN" FontSize="24">
+            <StackPanel Margin="37,0,76,0" Height="65">
+                <RadioButton x:Name="rdSexo1" Content="Masculino" Height="33" Width="147"/>
+                <RadioButton x:Name="rdSexo2" Content="Feminino" Height="39" RenderTransformOrigin="0.501,0.569" Width="152"/>
+            </StackPanel>
+        </GroupBox>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="139,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="24"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="140,240,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="184" Height="24"/>
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="75,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="White" FontFamily="Arial">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.056"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="79,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="White" FontFamily="Arial">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Data de nascimento" HorizontalAlignment="Left" Margin="436,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.248,-3.004" Background="White" FontFamily="Arial">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.424"/>
+                    <TranslateTransform X="2.325" Y="-0.214"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Calendar x:Name="dateDataDeNascimento" HorizontalAlignment="Left" Margin="409,128,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="23,340,0,0" VerticalAlignment="Top" Height="60" Width="150" Click="btnSalvar_Click" FontFamily="Times New Roman" FontSize="20" Background="White"/>
+
+    </Grid>
+</Window>

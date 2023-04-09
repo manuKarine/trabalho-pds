@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.RegrasDeNegocio.Listar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.RegrasDeNegocio"
+        mc:Ignorable="d"
+        Title="Listar" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cbListar" HorizontalAlignment="Left" Margin="131,54,0,0" VerticalAlignment="Top" Width="575" SelectionChanged="cbListar_SelectionChanged" Height="30"/>
+        <DataGrid x:Name="DT" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="54,104,40,131" RenderTransformOrigin="0.5,0.5" Background="#F92472">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.072"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+
+    </Grid>
+</Window>
